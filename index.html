@@ -2,9 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contacter nous</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <title>Contactez nous</title>
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet"> <!--integration bootstrap-->
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+
 </head>
 <body>
-
+<div class="container">
+    <div class="row">
+        <div id="contact-card" class="col-xs-12 col-sm-10 col-md-8 col-lg-6 offset-sm-1 offset-md-2 offset-ld-3">
+            <div class="card">
+                <form class="form" action="" method="post">
+                    <div class="card-header">
+                        <h1 class="h1">Contactez-nous</h1>
+                    </div>
+                    <div class="card-body">
+                        <fieldset> <!--regrouppement des inputs-->
+                            <label for="nom" class="">Nom:</label>
+                            <input class="form-control" id="nom" name="nom" type="text"/>
+                            <label for="prenom" class="">Prénom:</label>
+                            <input class="form-control" id="prenom" name="prenom" type="text"/>
+                            <label for="email" class="">E-mail:</label>
+                            <input class="form-control" id="email" name="email" type="email"/>
+                            <label for="message">Votre Message:</label>
+                            <textarea class="form-control" id="message" name="message"></textarea>
+                        </fieldset>
+                    </div>
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-success">Envoyer</button>
+                        <button type="reset" class="btn btn-warning">Annuler</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
